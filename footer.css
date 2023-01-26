@@ -1,0 +1,151 @@
+* {
+    font-family: Futura, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.footerbox{
+    background: #e6e6e6;
+}
+
+.footerboxinner {
+    background: #e6e6e6;
+    color: #000;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 0% 2%;
+    padding-top: 6%;
+}
+.fbox1 {
+    display: flex;
+    justify-content: center;
+}
+
+.fbox1link {
+    display: grid;
+    justify-content: center;
+    width: 50%;
+}
+
+.fbox1link h5 {
+    font-size: 19px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.fbox1link a {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    color: #000;
+    text-decoration: none;
+}
+.fbox2{
+    padding-left: 3%;
+    display: grid;
+}
+
+.fbox2 h4 {
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.fbox2 h2 {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 9%;
+}
+.fbox2 input{
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 2px;
+    padding: 0px 0px 0px 16px;
+    height: 38px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(180, 187, 195);
+    margin-top: 3%;
+    width: 60%;
+}
+.fbox2 button{
+        background: rgb(0, 0, 0);
+        border-radius: 2px;
+        border-style: none;
+        line-height: 1;
+        padding:11px 20px;
+        text-align: center;
+        word-break: break-word;
+        align-self: flex-end;
+        cursor: pointer;
+        height: auto;
+        width: 60%;
+}
+.fbox2 button a{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.fbox2 .socialicon{
+    margin: 4% 0;
+}
+.fbox2 .socialicon a{
+    color: #000;
+    font-size: 30px;
+    padding: 4px;
+}
+.footerlogo{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+    padding-top: 4%;
+}
+.footerlogo p{
+    font-size: 14px;
+}
+.footerlogo img{
+    padding-left: 24%;
+    padding-bottom: 2%;
+}
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+    .footerlogo img{
+        padding-left: 2%;
+    }
+    .footerboxinner {
+        padding: 10px;
+        grid-template-columns: repeat(1,1fr);
+        padding: 0% 5%;
+        padding-top: 6%;
+    }
+    .footerlogo{
+        padding: 5%;
+    }
+    .fbox2 h2 {
+        margin-top: 6%;
+        margin-bottom: 5%;
+    }
+    .fbox1link a {
+        padding-top: 5%;
+    }
+    .fbox1link h5 {
+        margin-bottom: 5%;
+    }
+    .fbox2 {
+        padding-left: 0%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+        
+ }
+
+

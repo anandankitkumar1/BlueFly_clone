@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.shopify.com/s/files/1/0248/3473/6191/files/bluefly_ico_new_32x32.png?v=1613180452'
+        rel='icon' type='image/x-icon' />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;500;600;700;800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8b305340ae.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>Account
+        &ndash; Bluefly
+    </title>
+    <style>
+        .section-header {
+            background-color: white;
+            box-sizing: border-box;
+            font-family: Futura, sans-serif;
+            font-size: 16px;
+            letter-spacing: 0.4px;
+            margin-top: 24%;
+            margin-bottom: 6%;
+            text-align: center;
+        }
+
+        .section-header__title {
+            box-sizing: border-box;
+            cursor: auto;
+            font-family: Tiemann, serif;
+            font-size: 2.375em;
+            font-weight: 400;
+            letter-spacing: 0em;
+            line-height: 1;
+            margin: 0px;
+            text-transform: uppercase;
+            user-select: text;
+
+        }
+
+        #CustomerLoginForm form {
+            box-sizing: border-box;
+            margin: 17px;
+        }
+
+        #CustomerLoginForm label {
+            box-sizing: border-box;
+            cursor: pointer;
+            display:
+                block;
+            font-size: 0.79em;
+            letter-spacing: 0px;
+            margin-bottom: 10px;
+            text-align: left;
+            text-transform: uppercase;
+        }
+
+        .input-full {
+            border-color: rgb(232, 232, 225);
+            border-radius: 0px;
+            border-style: solid;
+            border-width: 1px;
+            display: block;
+            font-family: Futura, sans-serif;
+            font-size: 16px;
+            letter-spacing: 0.025em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            padding: 8px 10px;
+            max-width: 100%;
+            width: 418.328px;
+        }
+
+        input {
+            outline: none;
+        }
+
+        .form-vertical {
+            background-color: white;
+            box-sizing: border-box;
+            font-family: Futura, sans-serif;
+            font-size: 16px;
+            letter-spacing: 0.4px;
+            user-select: text;
+            margin-bottom: 6%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .submitcl {
+            appearance: none;
+            background: rgb(17, 17, 17);
+            border-color: transparent;
+            border-radius: 0px;
+            border-style: solid;
+            border-width: 1px;
+            color: white;
+            cursor: pointer;
+            font-family: Futura, sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.3em;
+            line-height: 1.42;
+            margin: 0px 0px 30px;
+            max-width: 100%;
+            min-width: 90px;
+            overflow: hidden;
+            padding: 13px 20px;
+            position: relative;
+            text-rendering: optimizespeed;
+            text-size-adjust: 100%;
+            text-transform: uppercase;
+            vertical-align: middle;
+            white-space: normal;
+            width: 418.328px;
+        }
+
+        .lab {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #customer_register_link {
+            background: transparent;
+            box-sizing: border-box;
+            color: black;
+            cursor: pointer;
+            text-decoration-line: none;
+            user-select: text;
+        }
+
+        /* small screens */
+        @media only screen and (min-width: 0px) and (max-width: 420px) {
+            .form-vertical {
+                display: inline;
+            }
+        }
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+                .section-header{
+                    margin-top: 47%;
+                }
+            }
+
+            /* @media only screen and (min-width: 820px) and (max-width: 900px) {
+                .section-header{
+                    margin-top: 24%;
+                } */
+            
+
+        .errors {
+            background-color: #fff6f6;
+            border-radius: 0px;
+            border: 1px solid rgb(208, 46, 46);
+            box-sizing: border-box;
+            color: #d02e2e;
+            font-family: Futura, sans-serif;
+            font-size: 16px;
+            letter-spacing: 0.4px;
+            margin-bottom: 15px;
+            padding: 6px 12px;
+            user-select: text !important;
+            text-align: left;
+            display: none;
+        }
+
+        .errors>ul {
+            box-sizing: border-box;
+            list-style-image: initial;
+            list-style-position: outside;
+            margin: 0px 0px 0px 20px;
+            padding: 0px;
+            text-rendering: optimizelegibility;
+        }
+
+        .errors>ul>li {
+            box-sizing: border-box;
+            margin-bottom: 0px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="topnav">
+            <img src="img/topimg.jpg" alt="">
+        </div>
+        <div class="header">
+            <div>
+                <a href="index.html"><img src="img/logoimg.webp" alt=""></a>
+            </div>
+            <div class="headericon">
+                <i class="fa-solid fa-magnifying-glass"></i><input type="search" placeholder="SEARCH"
+                    aria-label="Search through site content">
+                    <a class=".prfl"><i class="fa-regular fa-user"></i></a>
+                    <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            </div>
+        </div>
+        <div id="navbarlink">
+            <div class="navbtn1"><button id="fade"><a id="cloth" class="navbar_a">CLOTHING</a></button></div>
+            <div id="shofade"><a href="product.html" class="navbar_a">SHOES</a></div>
+            <div><a class="navbar_a">HANDBAGS & ACCESSORIES</a></div>
+            <div><a class="navbar_a">DESIGNERS</a></div>
+            <div><a class="navbar_a">SUNGLASSES</a></div>
+            <div><a class="navbar_a">JEWELLERY & WATCHES</a></div>
+            <div><a class="navbar_a">UNDER $ 50</a></div>
+            <div><a class="navbar_a">BEAUTY</a></div>
+        </div>
+        <div class="navbar_c"><a class="">CLEARANCE</a></div>
+        <div id="cloth_hover">
+            <div id="first" class="one">
+                <div>
+                    <img src="img/navlinkwomen.avif" alt="">
+                    <h5><a href="">DRESSES</a></h5>
+                    <p><a href="">UP TO 80% OFF</a></p>
+                    <br />
+                </div>
+            </div>
+            <div id="first" class="one">
+                <P>WOMEN'S CLOTHING</P>
+                <P><a href="">Active Wear</a></P>
+                <P><a href="">tops</a></P>
+                <p><a href="">shorts</a></p>
+                <p><a href="">sharara suits</a></p>
+                <p><a href="">skirts</a></p>
+                <p><a href="">jumpsuits</a></p>
+                <p><a href="">sleapwear</a></p>
+            </div>
+            <div id="first" class="one"></div>
+            <div id="first" class="one">
+                <p>MEN'S CLOTHING</p>
+                <p><a href="">Active Wear</a></p>
+                <p><a href="">coats and dresses</a></p>
+                <p><a href="">denims</a></p>
+                <p><a href="">shorts</a></p>
+                <P><a href="">pants</a></P>
+                <P><a href="">polo shirts</a></P>
+                <P><a href="">jeans</a></P>
+            </div>
+        </div>
+        <div id="shoes_hover">
+            <div id="first" class="one">
+                <P>WOMEN'S SHOES</P>
+                <P><a href="">shop all</a></P>
+                <P><a href="">Boots</a></P>
+                <p><a href="">Espadrilles</a></p>
+                <p><a href="">Pumps & heels</a></p>
+                <p><a href="">sandals</a></p>
+                <p><a href="">sneakers</a></p>
+                <p><a href="">Slippers</a></p>
+            </div>
+            <div id="first" class="one">
+                <p>MEN'S SHOES</p>
+                <p><a href="">shop all</a></p>
+                <p><a href="">Drivers, Loafers & Slip-Ons</a></p>
+                <p><a href="">flats</a></p>
+                <p><a href="">sneakers</a></p>
+                <P><a href="">slippers</a></P>
+                <P><a href="">Sandals & Flip Flops</a></P>
+                <P><a href="">boots</a></P>
+            </div>
+            <div id="first" class="one">
+                <p>MEN'S DESIGNERS</p>
+                <p><a href="">Balenciaga</a></p>
+                <p><a href="">Alexander McQueen</a></p>
+                <p><a href="">Alexander McQueen</a></p>
+                <p><a href="">Burberry</a></p>
+                <P><a href="">pants</a></P>
+                <P><a href="">Gucci</a></P>
+                <P><a href="">Burberry</a></P>
+            </div>
+            <div id="first" class="one">
+                <div>
+                    <img id="shover" src="img/shoeshover.webp" alt="">
+                    <h5><a href="">DRIVERS, LOAFERS & SLIP-ONS</a></h5>
+                    <p><a href="">UP TO 70% OFF</a></p>
+                    <br />
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="slider">
+        <figure>
+            <div><span> WELCOME TO BLUEFLY:</span> Luxury brands at discounted price</div>
+            <div><span> FREE SHIPPING </span>On Orders Over $99</div>
+            <div><span> FREE GIFTS </span>with purchase Browse Now &gt; </div>
+            <div><span> FREE SAMPLES </span>with All Orders </div>
+            <div><span> DUE TO HIGH VOLUME</span> shipping maybe delayed </div>
+        </figure>
+    </div>
+    <div class="signformres">
+        <div class="section-header">
+            <h1 class="section-header__title">LOGIN</h1>
+        </div>
+
+        <div class="form-vertical" id="CustomerLoginForm">
+
+            <form>
+                <div class="errors">
+                    <ul>
+                        <li>Incorrect email or password.</li>
+                    </ul>
+                </div>
+                <label>EMAIL</label>
+                <input autocapitalize="off" autocorrect="off" class="input-full" id="email" type="email" required
+                    autofocus />
+                <div class="lab">
+                    <label>PASSWORD </label>
+                    <label>Forgot password? </label>
+                </div>
+                <input class="input-full" id="password" type="password" required autofocus />
+                <p>
+                    <button class="submitcl" type="submit">SIGN IN</button>
+                </p>
+                <p>
+                    <a href="signUp.html" id="customer_register_link">Create account</a>
+                </p>
+            </form>
+        </div>
+    </div>
+    <div id="container">
+        <div class="child">
+            <div>
+                <img class="ig" alt="sample"
+                    src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/denim_400x.jpg" />
+                <br> <br>
+                <h3>UP TO 85% OFF THE DENIM SHOP FOR HIM &amp; HER</h3>
+                <p>From Hudson Jeans, Joe's Jeans, J Brand &amp; More</p>
+
+                <a href="">SHOP DENIM</a>
+            </div>
+            <div>
+                <img alt="sample"
+                    src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/shutterstock_1112754335--RESIZED2_400x.jpg" />
+                <br> <br>
+                <h3>UP TO 90% OFF TRENDING JUMPSUITS &amp; ROMPERS</h3>
+                <p>Must-Haves From Halston, BCBGMAXAZRIA, Iro &amp; More</p>
+
+                <a href="">SHOP JUMPSUITS</a>
+
+
+            </div>
+            <div>
+                <img alt="sample"
+                    src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/shutterstock_210297940-resized_for_viewing_400x.jpg" />
+                <br> <br>
+                <h3>UP TO 90% OFF WOMEN'S MUST-HAVE ACCESSORIES</h3>
+
+                <p>Shop Wallets, Belts, Hats, Sunglasses & <br> More</p>
+
+                <a href="">SHOP WOMEN'S ACCESSORIES</a>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footerbox">
+            <div class="footerboxinner">
+                <div class="fbox1">
+                    <div class="fbox1link">
+                        <h5>About us</h5>
+                       <a href="contactUs.html">Contact Us</a>
+                       <a href="FrequentlyAskedQuestions.html">Frequently Asked Questions</a>
+                       <a href="Shipping&Returns.html">Shipping & Returns</a>
+                       <a href="Pre-OwnedGuide.html">Pre-Owned Guide</a>
+                    </div>
+                    <div class="fbox1link">
+                        <h5 id="fboxh"></h5> <br>
+                       <a href="SellonBluefly.html">Sell on Bluefly</a>
+                       <a href="PrivacyPolicy.html">Privacy Policy</a>
+                       <a href="Terms&Conditions.html">Terms & Conditions</a>
+                       <a href="info.html">Do not sell my personal information</a>
+                    </div>
+                </div>
+            <div class="fbox2">
+                <h2>SIGN UP AND SAVE</h2>
+                <h4>Subscribe to get exclusive offers on designer brands</h4>
+                <input type="text" placeholder="Enter your email"> <br>
+                <button><a href="">Subscribe</a></button>
+                <div class="socialicon">
+                <a href=""><span><i class="fa fa-instagram"></i></span></a>
+                <a href=""><span><i class="fa fa-facebook"></i></span></a>
+                </div>
+            </div>
+            </div>
+            <div class="footerlogo">
+                <a href="index.html"><img src="img/logoimg.webp" alt=""></a>
+                <p>© 2022 Bluefly 1998-2020 BLUEFLY.COM OR ITS AFFILIATES ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script src="header.js"></script>
+<script src="index.js"></script>
+<script>
+
+    let userData = JSON.parse(localStorage.getItem("userData"));
+    document.querySelector("form").addEventListener("submit", compare);
+
+    function compare(e) {
+        e.preventDefault();
+
+        let email = document.querySelector("#email").value
+        let password = document.querySelector("#password").value
+
+        console.log(email, password);
+
+        let isPresent = userData.filter(function (e) {
+            return email == e.email && password == e.password;
+        })
+        if (isPresent.length == 0) {
+            document.querySelector(".errors").style.display = "block";
+        }else{
+            Cnt = true;
+            localStorage.setItem("cnt", Cnt);
+            window.location.href="index.html"
+        }
+
+    }
+
+document.querySelector(".prfl").addEventListener("click",ckprfl);
+
+ function ckprfl(){
+
+	if(Cnt === "true"){
+	window.location.href="myAccount.html"
+	}else{
+	window.location.href="signin.html"
+}
+}
+</script>
